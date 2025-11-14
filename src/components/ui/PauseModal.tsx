@@ -28,7 +28,7 @@ export default PauseModal;*/
 
 /*v0.0.2*/
 import React from 'react';
-import './PauseModal.css';
+//import './PauseModal.css'; // not used
 
 interface Props { onResume: () => void; onMenu: () => void }
 export default function PauseModal({ onResume, onMenu }: Props) {

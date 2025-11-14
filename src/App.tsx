@@ -31,8 +31,7 @@ import Menu from './components/ui/Menu';
 import HUD from './components/ui/HUD';
 import PauseModal from './components/ui/PauseModal';
 import TouchControls from './components/ui/TouchControls';
-import './styles.css';
-//import './App.css';
+//import './App.css'; not used
 
 function createCube(type:number): Cube {
   return { type, color: ['#FF6B35','#D4A574','#4ECDC4'][type] || '#fff', x:50, y:480, vx:0, vy:0, width:CUBE_SIZE, height:CUBE_SIZE, grounded:false, abilityActive:false, abilityDuration:0, dead:false, reachedGoal:false };

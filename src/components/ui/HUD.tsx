@@ -31,7 +31,7 @@ export default HUD;*/
 
 /*v0.0.2*/
 import React from 'react';
-import './HUD.css';
+//import './HUD.css'; //   not used
 interface Props { score: number; onTogglePause: () => void; gameSpeed: number; setGameSpeed: (v: number) => void }
 export default function HUD({ score, onTogglePause, gameSpeed, setGameSpeed }: Props) {
     return (
