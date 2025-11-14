@@ -1,0 +1,32 @@
+# Build and runtime artifacts
+node_modules
+dist
+release/
+*.exe
+*.dmg
+*.AppImage
+
+
+# Environment and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+
+# Vite cache
+.vite/
+
+# Electron output
+out/
+build/
+*.exe
+*.dmg
+*.AppImage
+
+# OS-specific
+
+
+# IDE settings
+#.vscode/
