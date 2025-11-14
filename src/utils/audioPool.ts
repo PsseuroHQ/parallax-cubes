@@ -1,5 +1,5 @@
 /* ==============================
-src/utils/audioPool.ts v1.0.0
+src/utils/audioPool.ts v0.0.1
 - Loads wav samples into AudioBuffer and provides playAudio(id, opts)
 ============================== */
 
