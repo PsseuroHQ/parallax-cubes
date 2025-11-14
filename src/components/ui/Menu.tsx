@@ -1,7 +1,7 @@
 /* ==============================
-src/components/ui/Menu.tsx v1.0.0
+src/components/ui/Menu.tsx v0.0.1
 ============================== */
-import React from 'react';
+/*import React from 'react';
 import { motion } from 'framer-motion';
 import { levels } from '../../levels';
 
@@ -33,4 +33,38 @@ return (
 };
 
 
-export default Menu;
+export default Menu;*/
+
+/*v0.0.2*/
+import React from 'react';
+import { levels } from '../../levels';
+interface Props { onStart: (id: number) => void }
+/*export default function Menu({ onStart }: Props) {
+    return (
+        <div style={{ background: '#111827', padding: 24, borderRadius: 12 }}>
+            <h1 style={{ fontSize: 32 }}>Parallax Cubes</h1>
+            <p style={{ opacity: 0.8 }}>Three cubes. One goal. Use abilities to solve.</p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 12, marginTop: 16 }}>
+                {levels.map(l => <button key={l.id} className='btn' onClick={() => onStart(l.id)}>Level {l.id}<div style={{ fontSize: 12 }}>{l.name}</div></button>)}
+            </div>
+        </div>
+    );
+}*/
+
+
+export default function Menu({ onStart }: Props) {
+    return (
+        <div className="menu">
+            <h1 className="menu__title">Parallax Cubes</h1>
+            <p className="menu__subtitle">Three cubes. One goal. Use abilities to solve.</p>
+            <div className="menu__levels">
+                {levels.map(l => (
+                    <button key={l.id} className="btn menu__level" onClick={() => onStart(l.id)}>
+                        <span>Level {l.id}</span>
+                        <div className="menu__levelName">{l.name}</div>
+                    </button>
+                ))}
+            </div>
+        </div>
+    );
+}
